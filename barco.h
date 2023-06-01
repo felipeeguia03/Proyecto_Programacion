@@ -11,15 +11,16 @@ using namespace std;
 class barco {
 protected:
     int L;
-    char P;
-    int E;
+    int* E;
+
 public:
     barco();
-    barco(int longitud, char posicion,int estado);
+    barco(int longitud);
     int getL ();
     void setL (int longitud);
-    char getP ();
-    void setP (char posicion);
+    int getE();
+
+
 
 
 

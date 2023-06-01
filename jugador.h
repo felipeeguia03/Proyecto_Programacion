@@ -25,11 +25,22 @@ public:
     void setPG (int partidas);
     void colocarBarco();
     void disparar();
-    void mostrarTableroDefensa();
 
     //agregacion
     barco B;
     tablero T;
+    //objetos agregados
+    barco L{1};
+    barco S1{2};
+    barco S2{2};
+    barco D1{3};
+    barco D2{3};
+    barco D3{3};
+    barco P{4};
+
+
+
+
 
 
 

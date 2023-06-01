@@ -6,18 +6,10 @@
 #define TRABAJO_FINAL_NAVAL_MATEOS_EGUIA_CPP_TABLERO_H
 #include <string>
 #include "barco.h"
-#include "submarino.h"
-#include "destructor.h"
-#include "portaaviones.h"
-#include "lancha.h"
 
 
 class tablero {
 protected:
-    char Tablero1D[23][23];
-    char Tablero1A[23][23];
-    char Tablero2D[23][23];
-    char Tablero2A[23][23];
     int TAM;
     char TIPO;
     int J;
@@ -31,10 +23,7 @@ public:
     void crearTablero(int nj,string l);
     void mostrarTablero();
     bool verificar ();
-    submarino S;
-    portaaviones P;
-    destructor D;
-    lancha L;
+
 
 
 
