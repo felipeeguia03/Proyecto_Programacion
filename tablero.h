@@ -13,16 +13,19 @@ protected:
     int TAM;
     char TIPO;
     int J;
+
 public:
+    char** matriz;
     tablero();
     tablero(int tamanho,char tipo,int jugador);
     char getT();
     void setT (char tipo);
     int getJ();
     void setJ (int jugador);
-    void crearTablero(int nj,string l);
-    void mostrarTablero();
-    bool verificar ();
+    void mostrarTablero(int nj,string l);
+    void colocarBarco (int fila,int columna);
+    void Disparar(int fila,int columna);
+
 
 
 
