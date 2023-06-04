@@ -42,7 +42,8 @@ void tablero::setJ(int jugador) {
     J= jugador;
 }
 
-void tablero::mostrarTablero(int nj, int l){
+void tablero::mostrarTablero(int nj){
+
         cout << endl << endl;
         cout << endl << "=-=-=-=-=-=-=-=-=-= BATALLA NAVAL =-=-=-=-=-=-=-=-=-=-=-=-";
         cout << endl << endl << "Tablero jugador"<<nj;
@@ -53,9 +54,9 @@ void tablero::mostrarTablero(int nj, int l){
             cout << i + 1;
         }
         cout << endl;
-        for (int i = 0; i < FILAS; i++) {
+        for (int i = 0; i < TAM; i++) {
             cout << static_cast<char>('A' + i) << "  ";
-            for (int j = 0; j < COLUMNAS; j++) {
+            for (int j = 0; j < TAM; j++) {
                 cout << matriz[i][j] << " ";
             }
             cout << endl;

@@ -6,10 +6,12 @@
 #define TRABAJO_FINAL_NAVAL_MATEOS_EGUIA_CPP_JUGADOR_H
 #include <string>
 #include "tablero.h"
+#include "barco.h"
 using namespace std;
 
 class jugador {
 private:
+    int TAM;
     int NUM;
     string N;
     int G;
@@ -37,6 +39,8 @@ public:
     barco D2{3};
     barco D3{3};
     barco P{4};
+   tablero tableroPropio;
+   tablero tableroEnemigo;
 
 
 

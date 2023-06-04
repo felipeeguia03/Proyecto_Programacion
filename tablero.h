@@ -22,7 +22,7 @@ public:
     void setT (char tipo);
     int getJ();
     void setJ (int jugador);
-    void mostrarTablero(int nj,string l);
+    void mostrarTablero(int nj);
     void colocarBarco (int fila,int columna);
     void Disparar(int fila,int columna);
 

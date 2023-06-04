@@ -59,13 +59,6 @@ void crearJugador(){
     numJ++;
 
 }
-void iniciarTablero(int n){
-
-    tableros[numT]= new tablero (TAM,'A',n);
-    numT++;
-    tableros[numT]= new tablero (TAM,'D',n);
-    numT++;
-}
 int convertirFila(char letra){
     return letra-'A';
 
